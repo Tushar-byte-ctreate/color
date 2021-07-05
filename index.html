@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>T-shirt</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script
+        src="https://kit.fontawesome.com/6d985e968b.js"
+        crossorigin="anonymous"
+      ></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                <div class="image">
+                    <i id="color" class="fas fa-tshirt fa-7x"></i>
+                </div>
+                
+                <div class="color">
+                    <h1>T-shirt</h1>
+                    <div class="color1" onclick="changeColor('blue')"></div>
+                    <div class="color2" onclick="changeColor('#fff')"></div>
+                    <div class="color3" onclick="changeColor('#000')"></div>
+                   
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript">
+function changeColor (color){
+    let bg = document.querySelector("#color")
+    bg.style.color = color;
+}
+        
+            
+        </script>
+    </body>
+</html>
